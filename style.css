@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h5{
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.text-white {
+	margin-top: -86px;
+}
+
+.img {
+	margin-left: 261px;
+	max-width: 569px;
+	margin-top: -438px;
+}
+
+.bg-\[\#1B99D4\] {
+	padding-top: 70px;
+}
+
+.shadow\,.shadow-md\,.shadow-lg.rounded-\[10px\].w-\[1128px\] {
+	margin-left: 111px;
+}
+
+.bg-white.rounded-\[10px\].text-center.mr-17.p-6 {
+	margin: 0 30px;
+}
+
+.w-\[70px\].h-\[70px\] {
+	margin-left: 110px;
+}
+
+.bg-white.rounded-\[10px\].p-6.shadow\,.shadow-md\,.shadow-lg {
+	margin: 0 20px;
+}
+
+.pt-45 {
+	margin-left: 42%;
+}
+
+.bg-\[\#1B99D4\].w-\[360px\].h-\[4\].rounded-b-\[8px\] {
+	padding-top: 4px;
+	margin-top: 115px;
+	margin-bottom: -60px;
+}
+
+.shadow\,.shadow-md\,.shadow-lg.rounded-\[10px\].bg-white.w-\[1128px\] {
+	margin-left: 13%;
+}
+
+.flex.bg-\[\#1B99D4\].text-white.py-\[18px\].px-\[24px\].rounded-\[4px\].hover\:bg-transparent.hover\:text-\[\#1B99D4\].hover\:border.hover\:border-\[\#1B99D4\].duration-200 {
+	margin-top: 100px;
+	margin-left: 42%;
+}
+
+.bg-\[\#20AD96\].rounded-\[5px\].font-bold.text-\[28px\].text-white.w-\[170px\].h-\[62px\].items-center {
+	margin-right: 30px;
+}
+
+.w-2\/3.border.border-\[\#D9D9D9\].rounded-\[8px\].w-\[928px\].h-\[263px\].px-5.pt-5 {
+	margin-left: 55px;
+}
+
+.border.border-\[\#D9D9D9\].px-5.py-3.w-\[904px\] {
+	margin-left: 16%;
+}
+
+.rounded-b.bg-white.shadow\,.shadow-md\,.shadow-lg {
+	margin: 0 25px;
+}
+
+.pt-20 {
+	margin-left: 42%;
+}
+
+
+.pt-3.w-\[1060px\] {
+	margin-left: 9%;
+}
+
+.flex.border.border-\[\#C1C1C180\].py-3.pl-3 {
+	margin: 35px 0;
+}
+
+.font-\[500\].text-\[16px\].text-center {
+	padding-top: 90px;
+}
+
+.flex.text-center.items-center {
+	padding-top: 103px;
+}
+
+.fta {
+	padding-top: 185px;
+}
+
+
+
+
+
+

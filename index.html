@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- ✅ Correct Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontSize: {
+                '16px': '16px',
+              },
+              letterSpacing: {
+                '0.5px': '0.5px',
+              }
+            }
+          }
+        }
+    </script>
+      
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    
+    <header class="bg-white">
+        <div class="mx-auto px-4 py-3 flex items-center justify-between">
+            <div class="w-1/3">
+                <a href=""><img src="img/black-logo 1.png" alt=""></a>
+            </div>
+
+            <div class="w-1/3 bg-white w-full pl-[600px] items-center ">
+                <ul class="flex w-[375px] text-[#424352] font-[500] text-[16px] tracking-[0.5px]" style="font-family: inter;">
+                    <li><a class="hover:text-[#1B99D4] duration-200" href="">About us</a></li>
+                    <li><a class="px-[45px] hover:text-[#1B99D4] duration-200" href="">Courses</a></li>
+                    <li><a class="hover:text-[#1B99D4] duration-200" href="">Events</a></li>
+                    <li><a class="pl-[45px] hover:text-[#1B99D4] duration-200" href="">Blogs</a></li>
+                </ul>
+            </div>
+                    
+            <div class="w-1/3 pl-10">
+                <button><a class="font-[600] text-[16px] leading-[24px] text-white py-[9px] px-[20px] bg-[#1B99D4] rounded-[5px] hover:bg-white hover:text-[#1B99D4] hover:border duration-200 cursor-pointer" style="font-family: inter;" href="">Apply Now</a></button>
+            </div>
+        </div>
+    </header>
+      
+
+    <div class="bg-[#1B99D4] ">
+        <div class="container mx-auto">
+            <div class="flex items-center justify-between">
+                <div class="w-1/3 text-white pt-[188px]">
+                    <h4 class="text-[14px] bg-[#FFFFFF26] font-[500] text-white leading-[100%] tracking-[1%] py-[7px] px-[8px] rounded-[5px] w-[262px]">Specialization over generalization</h4>
+                    <h2 class="font-bold w-[455px] text-[42px] leading-[47.5px] tracking-[0%] py-[10px]">Advanced Data Science<br> & AI Course</h2>
+                    <p class="font-[400] text-[17px]">Equip yourself with data science skills through live,<br> interactive lectures guided by industry expert mentors</p>
+                    <h4 class="font-[400] text-[28px] tracking-[0.5%] pl-[4px] pt-[10px] pb-6">Live  Interactive Classes</h4>
+
+                    <button class="flex bg-white hover:bg-[#20AD96] duration-300 text-[#272727] py-[9px] px-[20px] rounded-[5px]"><img src="img/download.svg" alt=""><a class="font-[500] text-[16px] leading-[17px] pl-2" href="">Download Brochure</a></button>
+                </div>
+                <div class="w-1/3">
+                    <div class="bg-white rounded-[10px] text-[#252525B2] w-[429px] h-[539px] p-5">
+                        <h1 class="font-bold text-[36px] leading-[33.6px] text-[#252525]">We’re here to help!</h1>
+                        <p class="font-normal text-[18px] leading-[25px] pt-[15px]">Please contact us in case of any query.</p>
+                        <div class="w-1/4 font-normal text-[15px] text-[#727695] pt-12">
+                            <p class="border border-[#E6E9FC] rounded-[5px] w-[369px]"><input class="py-[12.5px] pl-[12px] rounded-[5px] w-full" type="Name" id="name" placeholder="Your name"></p>
+
+                        </div>
+                        <div class="w-1/4 bg-white rounded-[10px] text-[#252525B2] py-5">
+                            <p class="border border-[#E6E9FC] rounded-[5px] w-[369px]"><input class="py-[12.5px] pl-[12px] rounded-[5px] w-full" type="email" id="email" placeholder="Your email address"></p>
+                        </div>
+                        <div class="w-1/4 bg-white rounded-[10px] text-[#252525B2] pb-5">
+                            <p class="border border-[#E6E9FC] rounded-[5px]  w-[369px]"><input class="py-[12.5px] pl-[12px] rounded-[5px] w-full" type="phone" id="phone" placeholder="Your phone number"></p>
+                        </div>
+                        <div class="w-1/4 bg-white rounded-[10px] text-[#252525B2] pb-32">
+                            
+                            
+                            <select class=" sm:w1/2 font-normal text-[#727695] text-[15px] border border-[#E6E9FC] rounded-[5px]  w-[369px] py-[12.5px] pl-[12px]" name="Course" id="Select Course">
+                                <option value="Course">Select Course</option>
+                                <option value="Javascript">Javascript</option>
+                                <option value="React">React JS</option>
+                                <option value="Nodejs">Node.js</option>
+                                <option value="php">PHP</option>
+                            </select>
+                        </div>
+
+                        <button class="flex bg-[#1B99D4] text-white py-[9px] px-[20px] rounded-[5px] hover:bg-[#20AD96] hover:text-white duration-200"><a class="font-[500] text-[16px] leading-[17px] pr-2" href="">Get in Touch</a><img class="cursor-pointer" src="img/Vector.svg" alt=""></button>
+                        </div>
+                </div>
+            </div>
+
+            <img class="img h-[518px]" src="img/man-wearing-t-shirt-gesturing.png" alt="">
+        </div>
+    </div>
+
+    <section class="py-20 bg-[#f7f7f8]">
+        <div class="shadow, shadow-md, shadow-lg rounded-[10px] bg-white w-[1128px]">
+            <div class="flex pl-20 py-7">
+                <div class="flex w-1/3 items-center">
+                    <img class="w-[58px] h-[58px]" src="img/div.achieved-outcomes__card-image.png" alt="">
+                    <div class="pl-[20px]">
+                        <h1 class="font-bold text-[32px] text-[#27B94E] pb-[7px]">126%</h1>
+                        <p class="font-normal text-[16px] text-[#4D607D]">170% Average Salary Hike</p>
+                    </div>
+                </div>
+
+                <div class="flex w-1/3 items-center">
+                    <img class="w-[58px] h-[58px]" src="img/div.achieved-outcomes__card-image(1).png" alt="">
+                    <div class="pl-[20px]">
+                        <h1 class="font-bold text-[32px] text-[#FFA41B] pb-[7px]">100+</h1>
+                        <p class="font-normal text-[16px] text-[#4D607D]">Job Placments</p>
+                    </div>
+                </div>
+
+                <div class="flex w-1/3 items-center">
+                    <img class="w-[58px] h-[58px]" src="img/div.achieved-outcomes__card-image(2).png" alt="">
+                    <div class="pl-[20px]">
+                        <h1 class="font-bold text-[32px] text-[#D60000] pb-[7px]">Live</h1>
+                        <p class="font-normal text-[16px] text-[#4D607D]">Interactive Sessions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#F8FBFB] py-20">
+        <div class="container">
+            <div class="text-center">
+                <p class="text-[16px] text-[600] text-[#1B99D4]" style="font-family: poppins, sans-serif;">RELATED COURSES</p>
+                <h2 class="text-[600] text-[36px] text-[#000000]">Why Join this Program ?</h2>
+            </div>
+            <div class="flex text-[#000000] justify-center pt-10"> 
+                <div class="bg-white rounded-[10px] text-center p-6 shadow, shadow-md, shadow-lg">
+                    <img class="w-[70px] h-[70px]" src="img/Group 22040.png" alt="">
+                    <h4 class="text-[600] text-[21px] py-[25px]">Real Work Experience</h4>
+                    <p class="font-normal text-[16px] text-[#6F6B80] leading-normal">Work with companies directly on software<br> development projects to master your skills<br> and build a strong project portfolio to get<br> your.</p>
+                </div>
+
+                <div class="bg-white rounded-[10px] text-center mr-17 p-6 shadow, shadow-md, shadow-lg">
+                    <img class="w-[70px] h-[70px]" src="img/Group 22040.png" alt="">
+                    <h4 class="text-[600] text-[21px] py-[25px]">Guaranteed job referral</h4>
+                    <p class="font-normal text-[16px] text-[#6F6B80] leading-normal">Our program seeks to eliminate financial<br> risk in the upskilling journey with our<br> guaranteed Job referrals option</p>
+                </div>
+
+                <div class="bg-white rounded-[10px] text-center p-6 shadow, shadow-md, shadow-lg">
+                    <img class="w-[70px] h-[70px]" src="img/Group 22040.png" alt="">
+                    <h4 class="text-[600] text-[21px] py-[25px]">Crack FAANG Interview</h4>
+                    <p class="font-normal text-[16px] text-[#6F6B80] leading-normal">Interact and Learn from mentors working in<br> top product based companies to crack<br> interviews for your dream role.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#FEFEFE] py-20">
+        <div class="container">
+            <div class="">
+                <div class="text-center">
+                    <p class="text-[16px] text-[600] text-[#1B99D4]" style="font-family: poppins, sans-serif;">Our Alumni Placed</p>
+                    <h2 class="text-[600] text-[36px] text-[#231F40]">Explore Our Alumni & Connect With Them</h2>
+                </div>
+                <div class="flex text-[#000000] justify-center pt-10"> 
+                    <div class="bg-white rounded-[10px] p-6 shadow, shadow-md, shadow-lg">
+                        <div class="flex justify-between">
+                            <img class="w-[72px] h-[72px]" src="img/kanika-1.png" alt="">
+                            <div class="flex py-[2.18px] px-[10.92px] w-[115px] h-[27.66px] items-center border border-[#43A55D] rounded-[3px]">
+                                <img class="w-[17.47px] h-[17.47px]" src="img/Frame 55810.png" alt="">
+                                <p class="text-[14px] pl-1 text-[600] text-[#43A55D]" style="font-family: poppins">120% Hike</p>
+                            </div>
+                        </div>
+                        <h2 class="text-[600] text-[20px] py-1">Shaumaya Qha</h2>
+                        <h4 class="font-normal text-[16px]" style="font-family: poppins, sans-serif;">Software Engineer</h4>
+                        <h4></h4>
+                        <p class="font-normal text-[16px] text-[#4D607D] leading-normal">Apart from regular live classes, I was<br> assigned with a Mentor someone from <br>Microsoft and he guided me very well<br> through out the course.</p>
+                        <div class="flex pt-4">
+                            <img class="cursor-pointer w-[123px] h-[26px]" src="img/jpMorgan.png" alt="">
+                            <img class="px-[5px] cursor-pointer" src="img/arrow-right.svg" alt="">
+                            <img class="cursor-pointer w-[123px] h-[26px]" src="img/Walmart_logo.png" alt="">
+                        </div>
+                        <div class="flex pt-3">
+                            <img class="cursor-pointer" src="img/linkedin-f44fb7861d9c0cffc431d646f65276ab0a0dc7908ce0ed7cc80b7bc7532d5b12.svg.gz.png" alt="">
+    
+                            <button class="text-[16px] font-normal text-[#006DD9] pl-3 hover:text-[#369F52] duration-300 hover:font-bold" style="font-family: poppins, sans-serif;"><a href="">Read full review</a></button>
+                        </div>
+                    </div>
+    
+                    <div class="bg-white rounded-[10px] p-6 shadow, shadow-md, shadow-lg">
+                        <div class="flex justify-between">
+                            <img class="w-[72px] h-[72px]" src="img/kanika-2.png" alt="">
+                            <div class="flex py-[2.18px] px-[10.92px] w-[115px] h-[27.66px] items-center border border-[#43A55D] rounded-[3px]">
+                                <img class="w-[17.47px] h-[17.47px]" src="img/Frame 55810.png" alt="">
+                                <p class="text-[14px] pl-1 text-[600] text-[#43A55D]" style="font-family: poppins">90% Hike</p>
+                            </div>
+                        </div>
+                        <h2 class="text-[600] text-[20px] py-1">Subhangi Duhan</h2>
+                        <h4 class="font-normal text-[16px]" style="font-family: poppins, sans-serif;">Software Researcher</h4>
+                        <h4></h4>
+                        <p class="font-normal text-[16px] text-[#4D607D] leading-normal">My focus and expectations was more<br> into System Design and I have learned<br> a lot of it, Specially High Level design<br> and that helped me to crack Microsoft.</p>
+                        <div class="flex pt-4">
+                            <img class="cursor-pointer w-[123px] h-[26px]" src="img/jpMorgan.png" alt="">
+                            <img class="px-[5px] cursor-pointer" src="img/arrow-right.svg" alt="">
+                            <img class="cursor-pointer w-[123px] h-[26px]" src="img/Walmart_logo(1).png" alt="">
+                        </div>
+                        <div class="flex pt-3">
+                            <img class="cursor-pointer" src="img/linkedin-f44fb7861d9c0cffc431d646f65276ab0a0dc7908ce0ed7cc80b7bc7532d5b12.svg.gz.png" alt="">
+    
+                            <button class="text-[16px] font-normal text-[#006DD9] pl-3 hover:text-[#369F52] duration-300 hover:font-bold" style="font-family: poppins, sans-serif;"><a href="">Read full review</a></button>
+                        </div>
+                    </div>
+    
+                    <div class="bg-white rounded-[10px] p-6 shadow, shadow-md, shadow-lg">
+                        <div class="flex justify-between">
+                            <img class="w-[72px] h-[72px]" src="img/kanika-3.png" alt="">
+                            <div class="flex py-[2.18px] px-[10.92px] w-[115px] h-[27.66px] items-center border border-[#43A55D] rounded-[3px]">
+                                <img class="w-[17.47px] h-[17.47px]" src="img/Frame 55810.png" alt="">
+                                <p class="text-[14px] pl-1 text-[600] text-[#43A55D]" style="font-family: poppins">80% Hike</p>
+                            </div>
+                        </div>
+                        <h2 class="text-[600] text-[20px] py-1">Paras Yadav</h2>
+                        <h4 class="font-normal text-[16px]" style="font-family: poppins, sans-serif;">Software Tester</h4>
+                        <h4></h4>
+                        <p class="font-normal text-[16px] text-[#4D607D] leading-normal">Consistency is the key, that I have<br> learned from my Mentor at My_Tutor.<br> He usually motivates me to be<br> consistent is class and solving<br> problems.</p>
+                        <div class="flex pt-4">
+                            <img class="cursor-pointer w-[123px] h-[26px]" src="img/jpMorgan(1).png" alt="">
+                            <img class="px-[5px] cursor-pointer" src="img/arrow-right.svg" alt="">
+                            <img class="cursor-pointer w-[123px] h-[26px]" src="img/Walmart_logo(2).png" alt="">
+                        </div>
+                        <div class="flex pt-3">
+                            <img class="cursor-pointer" src="img/linkedin-f44fb7861d9c0cffc431d646f65276ab0a0dc7908ce0ed7cc80b7bc7532d5b12.svg.gz.png" alt="">
+    
+                            <button class="text-[16px] font-normal text-[#006DD9] pl-3 hover:text-[#369F52] duration-300 hover:font-bold" style="font-family: poppins, sans-serif;"><a href="">Read full review</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="flex bg-[#1B99D4] text-white py-[18px] px-[24px] rounded-[4px] hover:bg-transparent hover:text-[#1B99D4] hover:border hover:border-[#1B99D4] duration-200"><a class="font-[600] text-[18px] leading-[17px] pr-2" href="">Connect Now</a><img class="cursor-pointer" src="img/Vector.svg" alt=""></button>
+        </div>
+    </section>
+
+    <section class="bg-[#FEFEFE] py-6">
+        <div class="container">
+            <div class="">
+                <div class="text-center">
+                    <p class="text-[16px] text-[600] text-[#1B99D4]" style="font-family: poppins, sans-serif;">A Roadmap For Sucess</p>
+                    <h2 class="text-[600] text-[32px] text-[#231F40]">Our Comprehensive curriculum, Designed for professionals</h2>
+                </div>
+    
+                <div class="flex pt-12">
+                    <div class="w-2/3 pr-20">
+                        <h4 class="font-bold text-[24px] text-[#333333]">Course Description</h4>
+                        <p class="font-normal text-[18px] text-[#6F6B80] leading-normal py-[26px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et <br>dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas<br> accumsan lacus vel facilisis.</p>
+                        <div class="">
+                            <div class="flex justify-between items-center border border-[#D9D9D9] py-[17px] px-[29px] rounded-[5px]">
+                                <h2 class="text-[21px] font-[500] text-[#595665]" style="font-family: inter, sans-serif;">Unit 0 - Foundation Of Programming</h2>
+                                <img src="img/chevron-down.svg" alt="">
+                            </div>
+                        </div>
+    
+                        <div class="py-[30px]">
+                            <div class="flex justify-between items-center border border-[#D9D9D9] py-[17px] px-[29px] rounded-[5px]">
+                                <h2 class="text-[21px] font-[500] text-[#595665]" style="font-family: inter, sans-serif;">Unit 1 - Data Structures and Algorithms</h2>
+                                <img src="img/chevron-down.svg" alt="">
+                            </div>
+                        </div>
+    
+                        <div class="">
+                            <div class="flex justify-between items-center border border-[#D9D9D9] py-[17px] px-[29px] rounded-[5px]">
+                                <h2 class="text-[21px] font-[500] text-[#595665]" style="font-family: inter, sans-serif;">Unit 2 - System Design in Depth</h2>
+                                <img src="img/chevron-down.svg" alt="">
+                            </div>
+                        </div>
+    
+                        <div class="py-[30px]">
+                            <div class="flex justify-between items-center border border-[#D9D9D9] py-[17px] px-[29px] rounded-[5px]">
+                                <h2 class="text-[21px] font-[500] text-[#595665]" style="font-family: inter, sans-serif;">Unit 3 - Advance Data Structures & Algorithms</h2>
+                                <img src="img/chevron-down.svg" alt="">
+                            </div>
+                        </div>
+    
+                        <div class="">
+                            <div class="flex justify-between items-center border border-[#D9D9D9] py-[17px] px-[29px] rounded-[5px]">
+                                <h2 class="text-[21px] font-[500] text-[#595665]" style="font-family: inter, sans-serif;">Unit 4 -Electives & Specialization</h2>
+                                <img src="img/chevron-down.svg" alt="">
+                            </div>
+                        </div>
+    
+                        <div class="pt-[30px]">
+                            <div class="flex justify-between items-center border border-[#D9D9D9] py-[17px] px-[29px] rounded-[5px]">
+                                <h2 class="text-[21px] font-[500] text-[#595665]" style="font-family: inter, sans-serif;">Unit 5 -Work on End to End Projects in Partnership With Startups</h2>
+                                <img src="img/chevron-down.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="w-1/3 bg-white rounded-[8px] w-[360px] shadow, shadow-md, shadow-lg py-14 pr-3">
+                        <h2 class="font-normal text-[18px] text-[#6F6B80] text-center" style="font-family: inter, sans-serif;">Make Your Design Professional</h2>
+    
+                        <div class="w-1/3 pt-10">
+                            <div class="rounded-[10px] text-[#727695] w-[429px] h-[539px] p-5">
+                                <div class="w-1/4 font-normal text-[15px] text-[#727695] pt-12">
+                                    <p class="border border-[#E6E9FC] rounded-[5px] w-[320px]"><input class="py-[12.5px] pl-[12px] rounded-[5px] w-full" type="Name" id="name" placeholder="Enter Full Name"></p>
+        
+                                </div>
+                                <div class="w-1/4 bg-white rounded-[10px] text-[#252525B2] py-5">
+                                    <p class="border border-[#E6E9FC] rounded-[5px] w-[320px]"><input class="py-[12.5px] pl-[12px] rounded-[5px] w-full" type="email" id="email" placeholder="Enter email address"></p>
+                                </div>
+                                <div class="w-1/4 bg-white rounded-[10px] text-[#252525B2] pb-5">
+                                    <p class="border border-[#E6E9FC] rounded-[5px]  w-[320px]"><input class="py-[12.5px] pl-[12px] rounded-[5px] w-full" type="phone" id="phone" placeholder="Enter phone number"></p>
+                                </div>
+                                <div class="w-1/4 bg-white rounded-[10px] text-[#252525B2] pb-5">
+                                    
+                                    
+                                    <select class=" sm:w1/2 font-normal text-[#727695] text-[15px] border border-[#E6E9FC] rounded-[5px]  w-[320px] py-[12.5px] pl-[12px]" name="Course" id="Select Course">
+                                        <option value="Course">Select Course</option>
+                                        <option value="Javascript">Javascript</option>
+                                        <option value="React">React JS</option>
+                                        <option value="Nodejs">Node.js</option>
+                                        <option value="php">PHP</option>
+                                    </select>
+                                </div>
+                                <div class="w-1/4 bg-white rounded-[10px] text-[#252525B2] pb-5">
+                                    <p class="border border-[#E6E9FC] rounded-[5px]  w-[320px]"><input class="py-[12.5px] pl-[12px] rounded-[5px] w-full" type="phone" id="phone" placeholder="Schedule Date & Time"></p>
+                                </div>
+                                <p class="font-normal text-[12px] text-[#727695] pb-32 w-[340px]">By submitting the form, you agree to our Terms and<br> Conditions and our Privacy Policy.</p>
+        
+                                <div class="pb-12">
+                                    <button class="flex bg-[#1B99D4] text-white py-[9px] px-20 rounded-[5px] hover:bg-[#20AD96] hover:text-white duration-200"><a class="font-[500] text-[16px] leading-[17px] pr-2" href="">Apply for Counselling</a></button>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="bg-[#1B99D4] w-[360px] h-[4] rounded-b-[8px] rounded-b-[8px]"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-20">
+                <button class="flex bg-white border border-[#1B99D4] hover:bg-[#231F40] duration-300 text-[#1B99D4] py-[9px] px-[20px] rounded-[5px]"><img src="img/download-1.svg" alt=""><a class="font-[400] text-[16px] leading-[17px] pl-2" href="">Download Brochure</a></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#FEFEFE] py-9">
+        <div class="container">
+            <div class="flex">
+                <div class="w-1/2">
+                    <h2 class="font-[600] text-[48px] text-[#000000DE]">Hands-on Projects</h2>
+                    <p class="font-normal text-[16px] text-[#00000099] pt-[19px]">Find out how our Mentor transformed their careers by giving<br> Hands on Projects.</p>
+                    <div class="flex text-center items-center">
+                        <div class="bg-[#20AD96] rounded-[5px] font-bold text-[28px] text-white w-[170px] h-[62px] items-center">
+                            <h2>10+</h2>
+                            <h6 class="font-normal text-[16px]">Projects</h6>
+                        </div>
+                        <div class="bg-[#9747FF] rounded-[5px] font-bold text-[28px] text-white w-[170px] h-[62px]">
+                            <h2>06+</h2>
+                            <h6 class="font-normal text-[16px]">Domains</h6>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <img class="cursor-pointer" src="img/div.gl-slider-nav.svg" alt="">
+                        <img class="cursor-pointer" src="img/div.gl-slider-nav(1).svg" alt="">
+                    </div>
+                </div>
+
+                <div class="w-1/2 bg-white">
+                    <div class="shadow, shadow-md, shadow-lg pl-[35px] pt-[59px] pb-5 w-[630px]">
+                        <h2 class="font-bold text-[22px] text-[#727695]">Authentication</h2>
+                        <img class="py-[22px]" src="img/image.png" alt="">
+                        <p class="font-normal text-[16px] text-[#646464]">Create authentication technology to give access, Correspond<br> to those stored in a database of authorized users.</p>
+                    <div class="flex pt-[22px]">
+                        <h4 class="font-[500] text-[18px] text-[#646464]">Tools:</h4>
+                        <img class="pr-[20px] pl-2" src="img/SVG.png" alt="">
+                        <img src="img/SVG-2.png" alt="">
+                        <img class="px-[20px]" src="img/SVG-1.png" alt="">
+                        <img src="img/Frame.png" alt="">
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#FEFEFE] py-9">
+        <div class="container">
+            <div class="flex items-center">
+                <div class="w-1/3 border border-[#D9D9D9] rounded-[8px] w-[310px] h-[262px] pl-5 pt-5">
+                    <h4 class="font-[600] text-[18px] text-[#1B99D4]">Course Highlights</h4>
+                    <div class="pt-[26px]">
+                        <div class="flex items-center pb-3">
+                            <img class="w-[24px] h-[24px]" src="img/SVG.svg" alt="">
+                            <h4 class="font-normal text-[#646464] text-[16px] pl-3">350+ Live sessions</h4>
+                        </div>
+                        <div class="flex items-center">
+                            <img class="w-[24px] h-[24px]" src="img/SVG(1).svg" alt="">
+                            <h4 class="font-normal text-[#646464] text-[16px] pl-3">15+ Industry Projects</h4>
+                        </div>
+                        <div class="flex items-center py-3">
+                            <img class="w-[24px] h-[24px]" src="img/SVG(3).svg" alt="">
+                            <h4 class="font-normal text-[#646464] text-[16px] pl-3">Life time accessibility</h4>
+                        </div>
+                        <div class="flex items-center">
+                            <img class="w-[24px] h-[24px]" src="img/SVG(2).svg" alt="">
+                            <h4 class="font-normal text-[#646464] text-[16px] pl-3">Live project experience</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-2/3 border border-[#D9D9D9] rounded-[8px] w-[928px] h-[263px] px-5 pt-5">
+                    <p class="font-normal text-[16px] text-[#646464] pt-9">We are driven by the idea of program affordability. So, we give you several financial options to manage<br> and budget the expenses of your course.</p>
+                    <div class="flex justify-between items-center pt-[16px]">
+                        <div class="">
+                            <h2 class="font-bold text-[27px] text-[#2C2C2C] pb-[16px]">Starting at ₹ 120,000 + GST</h2>
+                            <h4 class="font-normal text-[16px] text-[#2C2C2C]">EMI starting from: ₹ 5,900/month</h4>
+                        </div>
+                        <button><a class="font-[600] text-[16px] leading-[24px] text-white py-[9px] px-[20px] bg-[#1B99D4] rounded-[5px] hover:bg-white hover:text-[#1B99D4] hover:border hover:border-[#1B99D4] duration-200 cursor-pointer" style="font-family: inter;" href="">Apply Now</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#FEFEFE] py-9">
+        <div class="container">
+            <div class="">
+                <h2 class="font-[600] text-[36px] text-[#000000] text-center pb-5">Next Cohort Details</h2>
+                <div class="border border-[#D9D9D9] rounded-[5px] px-5 py-3 w-[904px]">
+                    <div class="flex items-center justify-between">
+                        <img src="img/Group 1000004120.png" alt="">
+                        <h4 class="font-[500] text-[24px] text-[#272727] px-27">Weekend Batch [Sat - Sun]</h4>
+                        <button><a class="font-[600] text-[16px] leading-[24px] text-white py-[9px] px-[20px] bg-[#1B99D4] rounded-[5px] hover:bg-white hover:text-[#1B99D4] hover:border hover:border-[#1B99D4] duration-200 cursor-pointer" style="font-family: inter;" href="">Enroll Now</a></button>
+                    </div>
+
+                    <div class="flex items-center justify-between pt-9">
+                        <div class="">
+                            <h2 class="font-[500] text-[15px] text-[#272727]">Batch</h2>
+                            <h4 class="font-normal text-[18px] text-[#777D8C]">Morning </h4>
+                        </div>
+                        <div class="">
+                            <h2 class="font-[500] text-[15px] text-[#272727]">Time</h2>
+                            <h4 class="font-normal text-[18px] text-[#777D8C]">09:00 am-12:00 pm</h4>
+                        </div>
+                        <div class="">
+                            <h2 class="font-[500] text-[15px] text-[#272727]">Seat</h2>
+                            <h4 class="font-normal text-[18px] text-[#777D8C]">Available</h4>
+                        </div>
+                        <div class="">
+                            <h2 class="font-[500] text-[15px] text-[#272727]">Venue</h2>
+                            <h4 class="font-normal text-[18px] text-[#777D8C]">Virtual  Hall</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#FEFEFE] py-9">
+        <div class="container">
+            <div class="">
+                <div class="text-center">
+                    <p class="text-[16px] text-[600] text-[#1B99D4]" style="font-family: poppins, sans-serif;">DISCOVER OUR MENTORS</p>
+                    <h2 class="text-[600] text-[36px] text-[#231F40]">We have Industry Experts as Mentor who guide you with<br> Career Planning & Interview Preparation</h2>
+                </div>
+                <div class="flex justify-center pt-10">
+                    <div class="rounded-b rounded-b bg-white shadow, shadow-md, shadow-lg">
+                        <img src="img/sachinImage 3.png" alt="">
+                        <div class="px-3 pb-3">
+                            <div class="flex justify-between pt-3 pb-10">
+                                <div class="">
+                                    <h2 class="font-[600] text-[20px] text-[#000000]">Sachin Sharma</h2>
+                                    <h4 class="font-normal text-[14px] text-[#00000080]">Managing Director</h4>
+                                </div>
+                                <img class="w-[83px] h-[21px]" src="img/Walmart_logo(1).png" alt="">
+                            </div>
+                            <div class="flex items-center">
+                                <img class="cursor-pointer pr-2 w-[18.05px] h-[18.05px]" src="img/linkedin-f44fb7861d9c0cffc431d646f65276ab0a0dc7908ce0ed7cc80b7bc7532d5b12.svg.gz.png" alt="">
+                                <button><a class="font-normal text-[13px] text-[#006DD9] cursor-pointer hover:text-[#369F52] hover:font-bold" style="font-family: poppins, sans-serif;" href="">View Profile</a></button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="rounded-b rounded-b bg-white shadow, shadow-md, shadow-lg">
+                        <img src="img/sachinImage .png" alt="">
+                        <div class="px-3 pb-3">
+                            <div class="flex justify-between pt-3 pb-10">
+                                <div class="">
+                                    <h2 class="font-[600] text-[20px] text-[#000000]">Santosh Kumar<br>
+                                        Mishraa</h2>
+                                    <h4 class="font-normal text-[14px] text-[#00000080]">Managing Director</h4>
+                                </div>
+                                <img class="w-[83px] h-[21px]" src="img/Walmart_logo(1).png" alt="">
+                            </div>
+                            <div class="flex items-center">
+                                <img class="cursor-pointer pr-2 w-[18.05px] h-[18.05px]" src="img/linkedin-f44fb7861d9c0cffc431d646f65276ab0a0dc7908ce0ed7cc80b7bc7532d5b12.svg.gz.png" alt="">
+                                <button><a class="font-normal text-[13px] text-[#006DD9] cursor-pointer hover:text-[#369F52] hover:font-bold" style="font-family: poppins, sans-serif;" href="">View Profile</a></button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="rounded-b rounded-b bg-white shadow, shadow-md, shadow-lg">
+                        <img src="img/sachinImage 2.png" alt="">
+                        <div class="px-3 pb-3">
+                            <div class="flex justify-between pt-3 pb-10">
+                                <div class="">
+                                    <h2 class="font-[600] text-[20px] text-[#000000]">Prem Kumar</h2>
+                                    <h4 class="font-normal text-[14px] text-[#00000080]">Mentorship</h4>
+                                </div>
+                                <img class="w-[83px] h-[21px]" src="img/Walmart_logo(1).png" alt="">
+                            </div>
+                            <div class="flex items-center">
+                                <img class="cursor-pointer pr-2 w-[18.05px] h-[18.05px]" src="img/linkedin-f44fb7861d9c0cffc431d646f65276ab0a0dc7908ce0ed7cc80b7bc7532d5b12.svg.gz.png" alt="">
+                                <button><a class="font-normal text-[13px] text-[#006DD9] cursor-pointer hover:text-[#369F52] hover:font-bold" style="font-family: poppins, sans-serif;" href="">View Profile</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="pt-20"><a class="font-[600] text-[18px] leading-[24px] text-white py-[18px] px-[24px] bg-[#1B99D4] rounded-[5px] hover:bg-white hover:text-[#1B99D4] hover:border hover:border-[#1B99D4] duration-200 cursor-pointer" style="font-family: inter;" href="">More Mentor Details</a></button>
+        </div>
+    </section>
+
+    <section class="bg-[#FEFEFE] py-9">
+        <div class="container">
+            <div class="flex">
+                <div class="w-1/2 ">
+                    <h2 class="font-bold text-[48px] text-[#000000DE] leading-[64px]" style="font-family: inter, sans-serif;">Thousands of stories <br>of growth</h2>
+                    <p class="font-normal text-[#00000099] leading-[32px] pt-3" style="font-family: poppins, sans-serif;">Find out how our Learners transformed their careers after<br> learning witH us.</p>
+                </div>
+                <div class="w-1/2 pt-11">
+                    <img class="w-[50px] h-[43px]" src="img/“.png" alt="">
+                    <p class="font-[500] text-[#767676] leading-normal pt-4" style="font-family: inter, sans-serif;">“As a senior engineer I have specially reviewed the System Design content<br> and live classes of My_Tutor and I found it more on the implementation side<br> instead of theoretical concepts which helps to work in real-time<br> environment in the organization. I would recommend My_Tutor course to get<br> expertise in System Design.”</p>
+                    <div class="flex justify-between pt-9">
+                        <div class="flex">
+                            <img class="w-[64px] h-[64px]" src="img/Ellipse 1.png" alt="">
+                            <div class="pl-[15px]">
+                                <h2 class="font-[600] text-[20px] text-[#1B99D4] pb-[15px]" style="font-family: poppins, sans-serif;">Prem Kumar</h2>
+                                <img class="w-[86.21px] h-[13.42px]" src="img/Group 1000004036.png" alt="">
+                            </div>
+                        </div>
+                        <div class="flex items-center pr-20">
+                            <img class="cursor-pointer pr-2 w-[18.05px] h-[18.05px]" src="img/linkedin-f44fb7861d9c0cffc431d646f65276ab0a0dc7908ce0ed7cc80b7bc7532d5b12.svg.gz.png" alt="">
+                            <button><a class="font-normal text-[13px] text-[#006DD9] cursor-pointer hover:text-[#369F52] hover:font-bold" style="font-family: poppins, sans-serif;" href="">View Profile</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#FEFEFE] pt-9 pb-20">
+        <div class="container">
+            <div class="text-center">
+                <p class="text-[16px] text-[600] text-[#1B99D4]" style="font-family: poppins, sans-serif;">ASK YOUR QUESTIONS</p>
+                <h2 class="text-[600] text-[36px] text-[#231F40]">Frequently Asked Questions</h2>
+            </div>
+            <div class="pt-3 w-[1060px]">
+                <div class="flex border border-[#C1C1C180] py-3 pl-3">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="text-[#1B99D4] font-bold w-[24px] h-[24px]" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                      </svg>
+                      
+
+                    <h5 class="font-[500] text-[20px] text-[#212121] pl-2">How to enroll for a Course?</h5>
+                </div>
+                <div class="flex border border-[#C1C1C180] py-3 pl-3">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="text-[#1B99D4] font-bold w-[24px] h-[24px]" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                      </svg>
+                      
+
+                    <h5 class="font-[500] text-[20px] text-[#212121] pl-2">Can I get the recordings of my previous lectures?</h5>
+                </div>
+                <div class="flex border border-[#C1C1C180] py-3 pl-3">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="text-[#1B99D4] font-bold w-[24px] h-[24px]" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                      </svg>
+                      
+
+                    <h5 class="font-[500] text-[20px] text-[#212121] pl-2">Who would be the instructor for enrolled course?</h5>
+                </div>
+                <div class="flex border border-[#C1C1C180] py-3 pl-3">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="text-[#1B99D4] font-bold w-[24px] h-[24px]" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                      </svg>
+                      
+
+                    <h5 class="font-[500] text-[20px] text-[#212121] pl-2">What kind of placement support will be given post completion of program?</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#1B99D4] fta">
+        <div class="container">
+            <div class="text-white pb-5">
+                <div class="flex text-white">
+                    <div class="w-1/4">
+                        <img class="w-[199px] h-[54px] cursor-pointer" src="img/black-logo 2.png" alt="">
+                        <p class="font-[500] text-[16px] pt-3 pb-15 leading-normal" style="font-family: inter, sans-serif;">It is a long established fact that a<br> reader will be distracted by the<br> readable content of a page when<br> looking at its layout. The point of<br> using Lorem Ipsum.</p>
+                        <div class="flex items-center pt-10">
+                            <a href=""><img src="img/a.elementor-repeater-item-ebc11e8.svg" alt=""></a>
+                            <a href=""><img class="px-[15px]" src="img/a.elementor-repeater-item-7187269.svg" alt=""></a>
+                            <a href=""><img src="img/a.elementor-repeater-item-502b779.svg" alt=""></a>
+                            <a href=""><img class="pl-[15px]" src="img/a.elementor-repeater-item-ae8aa51.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="w-1/4">
+                        <h2 class="font-[600] text-[24px]" style="font-family: inter, sans-serif;">Explore</h2>
+                        <div class="flex pt-[23px]">
+                            <img class="cursor-pointer" src="img/Frame.svg" alt="">
+                            <h5 class="font-[500] text-[16px] pl-[3px] cursor-pointer hover:text-[#9747FF] duration-500">About Us</h5>
+                        </div>
+                        <div class="flex py-4">
+                            <img class="cursor-pointer" src="img/Frame.svg" alt="">
+                            <h5 class="font-[500] text-[16px] pl-[3px] cursor-pointer hover:text-[#9747FF] duration-500">Blog</h5>
+                        </div>
+                        <div class="flex">
+                            <img class="cursor-pointer" src="img/Frame.svg" alt="">
+                            <h5 class="font-[500] text-[16px] pl-[3px] cursor-pointer hover:text-[#9747FF] duration-500">Campus Program</h5>
+                        </div>
+                        <div class="flex py-4">
+                            <img class="cursor-pointer" src="img/Frame.svg" alt="">
+                            <h5 class="font-[500] text-[16px] pl-[3px] cursor-pointer hover:text-[#9747FF] duration-500">Become a Mentor</h5>
+                        </div>
+                        <div class="flex">
+                            <img class="cursor-pointer" src="img/Frame.svg" alt="">
+                            <h5 class="font-[500] text-[16px] pl-[3px] cursor-pointer hover:text-[#9747FF] duration-500">Contact us</h5>
+                        </div>
+                        <div class="flex pt-4">
+                            <img class="cursor-pointer" src="img/Frame.svg" alt="">
+                            <h5 class="font-[500] text-[16px] pl-[3px] cursor-pointer hover:text-[#9747FF] duration-500">Hire From us</h5>
+                        </div>
+                    </div>
+                    <div class="w-1/4">
+                        <h2 class="font-[600] text-[24px]" style="font-family: inter, sans-serif;">Useful Links</h2>
+                        <div class="flex pt-[23px]">
+                            <img class="cursor-pointer" src="img/Frame.svg" alt="">
+                            <h5 class="font-[500] text-[16px] pl-[3px] cursor-pointer hover:text-[#9747FF] duration-500">Privacy Policy</h5>
+                        </div>
+                        <div class="flex py-4">
+                            <img class="cursor-pointer" src="img/Frame.svg" alt="">
+                            <h5 class="font-[500] text-[16px] pl-[3px] cursor-pointer hover:text-[#9747FF] duration-500">Terms of use</h5>
+                        </div>
+                        <div class="flex">
+                            <img class="cursor-pointer" src="img/Frame.svg" alt="">
+                            <h5 class="font-[500] text-[16px] pl-[3px] cursor-pointer hover:text-[#9747FF] duration-500">Refund Policy</h5>
+                        </div>
+                    </div>
+                    <div class="w-1/4">
+                        <h2 class="font-[600] text-[24px]" style="font-family: inter, sans-serif;">Contact Info</h2>
+                        <div class="flex pt-[23px]">
+                            <img class="cursor-pointer" src="img/Frame(1).svg" alt="">
+                            <h5 class="font-[500] text-[16px] pl-[3px] cursor-pointer hover:text-gray-300 duration-500">4517 Washington Ave. Manchester,<br> Kentucky 39495</h5>
+                        </div>
+                        <div class="flex py-4">
+                            <img class="cursor-pointer" src="img/Frame(2).svg" alt="">
+                            <h5 class="font-[500] text-[16px] pl-[3px] cursor-pointer hover:text-gray-300 duration-500">+91-9024250272</h5>
+                        </div>
+                        <div class="flex">
+                            <img class="cursor-pointer" src="img/Frame(3).svg" alt="">
+                            <h5 class="font-[500] text-[16px] pl-[3px] cursor-pointer hover:text-gray-300 duration-500">shubhammodi820@gmail.com</h5>
+                        </div>
+                    </div>
+                </div>
+                <h5 class="font-[500] text-[16px] text-center">Copyright 2024 My_Tutor| Designed By Shubham Modi.</h5>
+            </div>
+            
+        </div>
+    </section>
+</body>
+</html>
